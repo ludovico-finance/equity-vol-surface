@@ -187,6 +187,13 @@ See `requirements.txt` for pinned versions.
 - **Newey-West standard errors are imperfect** for the overlapping-window setup
   in notebook 04; the regression should be read as exploratory rather than as
   the basis for a trading strategy.
+- **yfinance options data is most reliable during US market hours**
+  (roughly 14:30–21:00 UTC, weekdays). Outside these hours, bid/ask spreads
+  widen and volume/open-interest can collapse to zero, causing the strict
+  liquidity filters to remove all data. The notebook uses relaxed filters
+  (min OI = 10, min volume = 0) so it runs in any timezone; the default
+  filters in `src/surface.py` (min OI = 100, min volume = 10) are stricter
+  and recommended for production use during market hours.
 
 ---
 
