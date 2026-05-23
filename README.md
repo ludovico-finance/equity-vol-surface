@@ -36,17 +36,17 @@ does not provide historical option chains for full surface reconstruction.
 ```
 equity-vol-surface/
 │
-├── src/
-│   ├── bsm.py          Vectorised BSM: pricing, all Greeks, implied vol inversion
-│   ├── surface.py      VolSurface: fetch → IV extraction → arb filter → smoothed spline
-│   ├── local_vol.py    LocalVolSurface: Dupire equation via numerical differentiation
-│   └── utils.py        Data fetching, realised vol, IV spread computation
-│
 ├── notebooks/
 │   ├── 01_bsm_and_greeks.ipynb        BSM mechanics, Greeks, IV round-trip
 │   ├── 02_vol_surface.ipynb           Surface construction and visualisation
 │   ├── 03_local_vol_dupire.ipynb      Dupire local vol, IV vs LV comparison
 │   └── 04_surface_vs_realised.ipynb   Empirical: term structure vs realised vol
+│
+├── src/
+│   ├── bsm.py          Vectorised BSM: pricing, all Greeks, implied vol inversion
+│   ├── surface.py      VolSurface: fetch → IV extraction → arb filter → smoothed spline
+│   ├── local_vol.py    LocalVolSurface: Dupire equation via numerical differentiation
+│   └── utils.py        Data fetching, realised vol, IV spread computation
 │
 ├── tests/
 │   ├── test_bsm.py     33 tests: put-call parity, boundary conditions, Greeks, IV round-trip
