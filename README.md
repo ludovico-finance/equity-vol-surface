@@ -1,3 +1,7 @@
+> **Moved.** This repository now lives at [ludovico-luce/equity-vol-surface](https://github.com/ludovico-luce/equity-vol-surface). This copy is no longer maintained.
+
+___
+
 # equity-vol-surface
 
 ![CI](https://github.com/ludovico-finance/equity-vol-surface/actions/workflows/ci.yml/badge.svg)
